@@ -1,19 +1,18 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Car Racing Game</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🔥 Collent Car Racing 🔥</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="gameArea">
-    <div id="car"></div>
-    <div id="enemyCar"></div>
-    <div id="score">Score: 0</div>
-
-    <!-- Musik -->
-    <audio id="bgm" src="sounds/bgm.mp3" loop autoplay></audio>
-    <audio id="crash" src="sounds/crash.mp3"></audio>
+  <canvas id="gameCanvas" width="360" height="640"></canvas>
+  <div class="controls">
+    <button id="leftBtn">⬅️</button>
+    <button id="rightBtn">➡️</button>
   </div>
-  <script src="script.js"></script>
+  <script src="game.js"></script>
 </body>
 </html>
